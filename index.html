@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CyberChain | Cybersecurity & Blockchain Solutions in Oman</title>
-    <meta name="description" content="Empowering Oman's digital future with cutting-edge Cybersecurity, Blockchain, and AI solutions. Professional services for businesses and government." />
-    <meta name="keywords" content="">
+    <meta
+      name="description"
+      content="Empowering Oman's digital future with cutting-edge Cybersecurity, Blockchain, and AI solutions. Professional services for businesses and government."
+    />
+    <meta name="keywords" content="" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/output.css"> -->
     <link rel="stylesheet" href="vendor/fontawsome/all.min.css" />
     <link rel="stylesheet" href="vendor/fontface/css2.css" />
     <script src="js/script.js" defer></script>
@@ -17,9 +21,9 @@
   <body class="bg-light-100 text-gray-800 dark:bg-dark-900 dark:text-light-200">
     <!-- Header/Navigation -->
     <header
-      class="sticky top-0 z-50 bg-white/80 dark:bg-dark-800/80 backdrop-blur-md shadow-sm overflow-hidden"
+      class="sticky top-0 z-50 bg-white/80 dark:bg-dark-800/80 backdrop-blur-md shadow-sm"
     >
-      <div class="container mx-auto px-14 py-3 overflow-hidden">
+      <div class="container mx-auto px-14 py-3">
         <div class="flex justify-between items-center">
           <div class="flex items-center space-x-2">
             <div
@@ -36,15 +40,28 @@
               ></a
             >
           </div>
-
           <div class="hidden md:flex items-center space-x-8">
-            <a href="#home" class="nav-link font-medium">Home</a>
-            <a href="#services" class="nav-link font-medium">Services</a>
-            <a href="#" class="nav-link font-medium">Products</a>
-            <a href="#solutions" class="nav-link font-medium">Solutions</a>
+            <a href="#home" class="nav-link font-medium p-0">Home</a>
+            <!-- <details class="relative inline-block text-right nav-link">
+              <summary class="summary-icon cursor-pointer py-2">Business</summary>
+              <div class="absolute rounded-bl-lg rounded-br-lg transition-all duration-500 right-[-105px] mt-4 w-[300px] dark:bg-gray-700 flex justify-center items-center">
+                <a href="#services" class="font-medium p-4">Services</a>
+                <a href="#" class="font-medium p-4">Products</a>
+                <a href="#solutions" class="font-medium p-4">Solutions</a>
+              </div>
+            </details> -->
+           <div class="relative inline-block text-right nav-link">
+              <input type="checkbox" id="menu-toggle" />
+              <label for="menu-toggle" class="cursor-pointer py-2">Business</label>
+              <div class="absolute dropdown hidden rounded-bl-lg  rounded-br-lg transition-all duration-500 right-[-105px] mt-[24px] w-[300px] dark:bg-gray-700 justify-center items-center">
+                <a href="#services" class="font-medium p-4">Services</a>
+                <a href="#" class="font-medium p-4">Products</a>
+                <a href="#solutions" class="font-medium p-4">Solutions</a>
+              </div>
+            </div>
             <a href="#blog" class="nav-link font-medium">Blog</a>
             <a href="#" class="nav-link font-medium">Event</a>
-            <a href="#contact" class="nav-link font-medium">Contact</a>
+            <a href="#About" class="nav-link font-medium">About Us</a>
 
             <button
               id="themeToggle"
@@ -57,12 +74,11 @@
                 class="fas fa-sun text-yellow-400 dark:text-gray-300 block dark:hidden"
               ></i>
             </button>
-
             <a
               href="#contact"
               class="bg-primary-light hover:bg-primary-dark text-white px-4 py-2 rounded-md font-medium transition-colors"
             >
-              Get Started
+              Get In Touch
             </a>
           </div>
 
@@ -109,7 +125,7 @@
     </header>
 
     <!-- Hero Section -->
-      
+
     <section id="home" class="relative overflow-hidden">
       <div
         class="absolute inset-0 bg-gradient-to-br from-primary-light/10 to-secondary-light/10 dark:from-primary-dark/5 dark:to-secondary-dark/5 -z-10"
@@ -145,7 +161,10 @@
               </a>
             </div>
           </div>
-          <div class="md:w-1/2 justify-center hidden md:flex" data-aos="fade-left">
+          <div
+            class="md:w-1/2 justify-center hidden md:flex"
+            data-aos="fade-left"
+          >
             <!-- <div class="relative w-full max-w-lg">
               <div
                 class="absolute -top-10 -left-10 w-64 h-64 bg-primary-light/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 dark:opacity-30 animate-blob"
@@ -233,7 +252,11 @@
                 </div>
               </div>
             </div> -->
-          <img src="src/img/landing.png" alt="landing" class="rounded-full custom-landing float-animation">
+            <img
+              src="src/img/landing.png"
+              alt="landing"
+              class="rounded-full custom-landing float-animation"
+            />
           </div>
         </div>
       </div>
@@ -308,7 +331,8 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Service 1 -->
-          <div data-aos="fade-right"
+          <div
+            data-aos="fade-right"
             class="service-card bg-white dark:bg-dark-800 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300"
           >
             <div class="p-6">
@@ -352,7 +376,8 @@
           </div>
 
           <!-- Service 2 -->
-          <div data-aos="fade-up"
+          <div
+            data-aos="fade-up"
             class="service-card bg-white dark:bg-dark-800 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300"
           >
             <div class="p-6">
@@ -397,7 +422,8 @@
           </div>
 
           <!-- Service 3 -->
-          <div data-aos="fade-left"
+          <div
+            data-aos="fade-left"
             class="service-card bg-white dark:bg-dark-800 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300"
           >
             <div class="p-6">
@@ -827,7 +853,8 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Blog Post 1 -->
-          <div data-aos="zoom-in-right"
+          <div
+            data-aos="zoom-in-right"
             class="bg-white dark:bg-dark-700 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-lg"
           >
             <div
@@ -860,7 +887,8 @@
           </div>
 
           <!-- Blog Post 2 -->
-          <div data-aos="zoom-in-up"
+          <div
+            data-aos="zoom-in-up"
             class="bg-white dark:bg-dark-700 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-lg"
           >
             <div
@@ -893,7 +921,8 @@
           </div>
 
           <!-- Blog Post 3 -->
-          <div data-aos="zoom-in-left"
+          <div
+            data-aos="zoom-in-left"
             class="bg-white dark:bg-dark-700 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-lg"
           >
             <div
@@ -957,7 +986,8 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Testimonial 1 -->
-          <div data-aos="zoom-out-right"
+          <div
+            data-aos="zoom-out-right"
             class="bg-white dark:bg-dark-700 rounded-xl shadow-md p-6 border border-gray-200 dark:border-gray-700"
           >
             <div class="flex items-center mb-4">
@@ -991,7 +1021,8 @@
           </div>
 
           <!-- Testimonial 2 -->
-          <div data-aos="zoom-out-up"
+          <div
+            data-aos="zoom-out-up"
             class="bg-white dark:bg-dark-700 rounded-xl shadow-md p-6 border border-gray-200 dark:border-gray-700"
           >
             <div class="flex items-center mb-4">
@@ -1025,7 +1056,8 @@
           </div>
 
           <!-- Testimonial 3 -->
-          <div data-aos="zoom-out-left"
+          <div
+            data-aos="zoom-out-left"
             class="bg-white dark:bg-dark-700 rounded-xl shadow-md p-6 border border-gray-200 dark:border-gray-700"
           >
             <div class="flex items-center mb-4">
@@ -1203,7 +1235,8 @@
             </div>
           </div>
 
-          <div data-aos="fade-left"
+          <div
+            data-aos="fade-left"
             class="bg-white w-full dark:bg-dark-700 rounded-xl shadow-lg p-8 border border-gray-200 dark:border-gray-700"
           >
             <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
@@ -1340,7 +1373,7 @@
                 class="w-10 h-10 rounded-full bg-primary-dark/10 flex items-center justify-center"
               >
                 <!-- <i class="fas fa-shield-alt text-primary-dark"></i> -->
-                 <img src="src/img/logo.png" alt="logo" class="p-1">
+                <img src="src/img/logo.png" alt="logo" class="p-1" />
               </div>
               <a href="#" class="text-xl font-bold text-white"
                 >Cyber<span class="text-secondary-dark">Chain</span></a

@@ -58,15 +58,29 @@ textarea:focus {
   box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.5);
 }
 
-.custom-landing{
+.custom-landing {
   box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.6);
 }
 @keyframes floatUpDown {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .float-animation {
   animation: floatUpDown 3s ease-in-out infinite;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + label + .dropdown {
+  display: flex;
 }
