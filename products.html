@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberChain | Blogs</title>
+    <meta name="keywords" content="" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="vendor/fontawsome/all.min.css" />
+    <link rel="stylesheet" href="vendor/fontface/css2.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="js/theme.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body class="bg-light-100 text-gray-800 dark:bg-dark-900 dark:text-light-200">
+    <!-- Header/Navigation -->
+    <header
+      class="sticky top-0 z-50 bg-white/80 dark:bg-dark-800/80 backdrop-blur-md shadow-sm"
+    >
+      <div class="container mx-auto px-14 py-3">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center space-x-2">
+            <div
+              class="w-12 h-12 rounded-full dark:bg-primary-dark/10 bg-sky-500 flex items-center justify-center"
+            >
+              <!-- <i class="fas fa-shield-alt text-white text-lg"></i> -->
+              <img src="src/img/logo.png" alt="logo" class="p-1 w-[200px]" />
+            </div>
+            <a
+              href="#"
+              class="text-xl font-bold text-primary-light dark:text-primary-dark"
+              >Cyber<span class="text-secondary-light dark:text-secondary-dark"
+                >Chain</span
+              ></a
+            >
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="nav-link font-medium p-0">Home</a>
+            <!-- <details class="relative inline-block text-right nav-link">
+              <summary class="summary-icon cursor-pointer py-2">Business</summary>
+              <div class="absolute rounded-bl-lg rounded-br-lg transition-all duration-500 right-[-105px] mt-4 w-[300px] dark:bg-gray-700 flex justify-center items-center">
+                <a href="#services" class="font-medium p-4">Services</a>
+                <a href="#" class="font-medium p-4">Products</a>
+                <a href="#solutions" class="font-medium p-4">Solutions</a>
+              </div>
+            </details> -->
+            <div class="relative inline-block text-right nav-link">
+              <input type="checkbox" id="menu-toggle" />
+              <label for="menu-toggle" class="cursor-pointer py-2"
+                >Business</label
+              >
+              <div
+                class="absolute dropdown hidden rounded-bl-lg rounded-br-lg transition-all duration-500 right-[-105px] mt-[24px] w-[300px] dark:bg-gray-700 justify-center items-center"
+              >
+                <a href="#services" class="font-medium p-4">Services</a>
+                <a href="./products.html" class="font-medium p-4">Products</a>
+                <a href="#solutions" class="font-medium p-4">Solutions</a>
+              </div>
+            </div>
+            <a href="#blog" class="nav-link font-medium">Blog</a>
+            <a href="#" class="nav-link font-medium">Event</a>
+            <a href="#About" class="nav-link font-medium">About Us</a>
+
+            <button
+              id="themeToggle"
+              class="theme-toggle p-2 rounded-full hover:bg-light-300 dark:hover:bg-dark-700"
+            >
+              <i
+                class="fas fa-moon text-gray-600 dark:text-yellow-300 hidden dark:block"
+              ></i>
+              <i
+                class="fas fa-sun text-yellow-400 dark:text-gray-300 block dark:hidden"
+              ></i>
+            </button>
+            <a
+              href="#contact"
+              class="bg-primary-light hover:bg-primary-dark text-white px-4 py-2 rounded-md font-medium transition-colors"
+            >
+              Get In Touch
+            </a>
+          </div>
+
+          <button
+            id="mobileMenuButton"
+            class="md:hidden p-2 rounded-md hover:bg-light-300 dark:hover:bg-dark-700"
+          >
+            <i class="fas fa-bars text-gray-600 dark:text-gray-300"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+          <div class="flex flex-col space-y-3">
+            <a href="#home" class="nav-link font-medium py-2">Home</a>
+            <a href="#services" class="nav-link font-medium py-2">Services</a>
+            <a href="#solutions" class="nav-link font-medium py-2">Solutions</a>
+            <a href="#blog" class="nav-link font-medium py-2">Blog</a>
+            <a href="#contact" class="nav-link font-medium py-2">Contact</a>
+
+            <div class="flex items-center justify-between pt-2">
+              <button
+                id="themeToggleMobile"
+                class="theme-toggle p-2 rounded-full hover:bg-light-300 dark:hover:bg-dark-700"
+              >
+                <i
+                  class="fas fa-moon text-gray-600 dark:text-yellow-300 hidden dark:block"
+                ></i>
+                <i
+                  class="fas fa-sun text-yellow-400 dark:text-gray-300 block dark:hidden"
+                ></i>
+              </button>
+
+              <a
+                href="#contact"
+                class="bg-primary-light hover:bg-primary-dark text-white px-4 py-2 rounded-md font-medium transition-colors"
+              >
+                Get Started
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Products Section -->
+    <section id="blog" class="py-20 bg-light-200 dark:bg-dark-800">
+      <div class="container mx-auto px-4">
+        <div class="mb-16 container grid grid-cols-2 px-4">
+          <div
+            class="text-3xl font-bold text-secondary-light dark:text-secondary-dark"
+          >
+            <h1>Products</h1>
+          </div>
+          <div
+            class="text-right text-xl text-secondary-light dark:text-secondary-dark font-light"
+          >
+            <h1>472 Product</h1>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-8">
+          <!-- Blog Post 1 -->
+          <div
+            class="bg-white dark:bg-dark-700 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-lg"
+          >
+            <div
+              class="h-48 bg-gradient-to-r from-primary-light to-secondary-light flex items-center justify-center"
+            >
+              <i class="fas fa-lock-open text-white text-5xl"></i>
+            </div>
+            <div class="p-6">
+              <div
+                class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3"
+              >
+                <span>May 15, 2023</span>
+                <span class="mx-2">•</span>
+                <span>Cybersecurity</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">
+                Emerging Threats in Oman's Digital Economy
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Analysis of the latest cybersecurity threats targeting Oman's
+                growing digital economy and financial sector.
+              </p>
+              <a
+                href="#"
+                class="text-primary-light dark:text-primary-dark font-medium flex items-center"
+              >
+                Read more <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Blog Post 2 -->
+          <div
+            class="bg-white dark:bg-dark-700 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-lg"
+          >
+            <div
+              class="h-48 bg-gradient-to-r from-secondary-light to-accent-light flex items-center justify-center"
+            >
+              <i class="fas fa-link text-white text-5xl"></i>
+            </div>
+            <div class="p-6">
+              <div
+                class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3"
+              >
+                <span>April 28, 2023</span>
+                <span class="mx-2">•</span>
+                <span>Blockchain</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">
+                Blockchain Adoption in Omani Government Services
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                How blockchain technology is transforming government services
+                and public sector operations in Oman.
+              </p>
+              <a
+                href="#"
+                class="text-secondary-light dark:text-secondary-dark font-medium flex items-center"
+              >
+                Read more <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Blog Post 3 -->
+          <div
+            class="bg-white dark:bg-dark-700 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-lg"
+          >
+            <div
+              class="h-48 bg-gradient-to-r from-accent-light to-primary-light flex items-center justify-center"
+            >
+              <i class="fas fa-robot text-white text-5xl"></i>
+            </div>
+            <div class="p-6">
+              <div
+                class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3"
+              >
+                <span>April 10, 2023</span>
+                <span class="mx-2">•</span>
+                <span>Artificial Intelligence</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">
+                AI-Powered Fraud Detection for Omani Banks
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Exploring how AI and machine learning are revolutionizing fraud
+                detection in Oman's banking sector.
+              </p>
+              <a
+                href="#"
+                class="text-accent-light dark:text-accent-dark font-medium flex items-center"
+              >
+                Read more <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Blog Post 4 -->
+          <div
+            class="bg-white dark:bg-dark-700 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-lg"
+          >
+            <div
+              class="h-48 bg-gradient-to-r from-accent-light to-primary-light flex items-center justify-center"
+            >
+              <i class="fas fa-robot text-white text-5xl"></i>
+            </div>
+            <div class="p-6">
+              <div
+                class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3"
+              >
+                <span>April 10, 2023</span>
+                <span class="mx-2">•</span>
+                <span>Artificial Intelligence</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">
+                AI-Powered Fraud Detection for Omani Banks
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Exploring how AI and machine learning are revolutionizing fraud
+                detection in Oman's banking sector.
+              </p>
+              <a
+                href="#"
+                class="text-accent-light dark:text-accent-dark font-medium flex items-center"
+              >
+                Read more <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Blog Post 5 -->
+          <div
+            class="bg-white dark:bg-dark-700 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-lg"
+          >
+            <div
+              class="h-48 bg-gradient-to-r from-accent-light to-primary-light flex items-center justify-center"
+            >
+              <i class="fas fa-robot text-white text-5xl"></i>
+            </div>
+            <div class="p-6">
+              <div
+                class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3"
+              >
+                <span>April 10, 2023</span>
+                <span class="mx-2">•</span>
+                <span>Artificial Intelligence</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">
+                AI-Powered Fraud Detection for Omani Banks
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Exploring how AI and machine learning are revolutionizing fraud
+                detection in Oman's banking sector.
+              </p>
+              <a
+                href="#"
+                class="text-accent-light dark:text-accent-dark font-medium flex items-center"
+              >
+                Read more <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Blog Post 6 -->
+          <div
+            class="bg-white dark:bg-dark-700 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-lg"
+          >
+            <div
+              class="h-48 bg-gradient-to-r from-accent-light to-primary-light flex items-center justify-center"
+            >
+              <i class="fas fa-robot text-white text-5xl"></i>
+            </div>
+            <div class="p-6">
+              <div
+                class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3"
+              >
+                <span>April 10, 2023</span>
+                <span class="mx-2">•</span>
+                <span>Artificial Intelligence</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">
+                AI-Powered Fraud Detection for Omani Banks
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Exploring how AI and machine learning are revolutionizing fraud
+                detection in Oman's banking sector.
+              </p>
+              <a
+                href="#"
+                class="text-accent-light dark:text-accent-dark font-medium flex items-center"
+              >
+                Read more <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Blog Post 7 -->
+          <div
+            class="bg-white dark:bg-dark-700 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-lg"
+          >
+            <div
+              class="h-48 bg-gradient-to-r from-accent-light to-primary-light flex items-center justify-center"
+            >
+              <i class="fas fa-robot text-white text-5xl"></i>
+            </div>
+            <div class="p-6">
+              <div
+                class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3"
+              >
+                <span>April 10, 2023</span>
+                <span class="mx-2">•</span>
+                <span>Artificial Intelligence</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">
+                AI-Powered Fraud Detection for Omani Banks
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Exploring how AI and machine learning are revolutionizing fraud
+                detection in Oman's banking sector.
+              </p>
+              <a
+                href="#"
+                class="text-accent-light dark:text-accent-dark font-medium flex items-center"
+              >
+                Read more <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Blog Post 8 -->
+          <div
+            class="bg-white dark:bg-dark-700 rounded-xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-lg"
+          >
+            <div
+              class="h-48 bg-gradient-to-r from-accent-light to-primary-light flex items-center justify-center"
+            >
+              <i class="fas fa-robot text-white text-5xl"></i>
+            </div>
+            <div class="p-6">
+              <div
+                class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3"
+              >
+                <span>April 10, 2023</span>
+                <span class="mx-2">•</span>
+                <span>Artificial Intelligence</span>
+              </div>
+              <h3 class="text-xl font-bold mb-3">
+                AI-Powered Fraud Detection for Omani Banks
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Exploring how AI and machine learning are revolutionizing fraud
+                detection in Oman's banking sector.
+              </p>
+              <a
+                href="#"
+                class="text-accent-light dark:text-accent-dark font-medium flex items-center"
+              >
+                Read more <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <a
+            href="/blogs.html"
+            class="inline-flex items-center px-6 py-3 border border-primary-light text-primary-light hover:bg-primary-light/10 dark:border-primary-dark dark:text-primary-dark dark:hover:bg-primary-dark/10 rounded-md font-medium transition-colors"
+          >
+            More Article <i class="fas fa-arrow-down ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-800 text-gray-300 pt-16 pb-8">
+      <div class="container mx-auto px-4">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12"
+        >
+          <div>
+            <div class="flex items-center space-x-2 mb-4">
+              <div
+                class="w-10 h-10 rounded-full bg-primary-dark/10 flex items-center justify-center"
+              >
+                <!-- <i class="fas fa-shield-alt text-primary-dark"></i> -->
+                <img src="src/img/logo.png" alt="logo" class="p-1" />
+              </div>
+              <a href="#" class="text-xl font-bold text-white"
+                >Cyber<span class="text-secondary-dark">Chain</span></a
+              >
+            </div>
+            <p class="mb-4">
+              Empowering Oman's digital transformation with cutting-edge
+              cybersecurity, blockchain, and AI solutions.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-dark-700 hover:bg-dark-600 flex items-center justify-center"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-dark-700 hover:bg-dark-600 flex items-center justify-center"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-dark-700 hover:bg-dark-600 flex items-center justify-center"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-dark-700 hover:bg-dark-600 flex items-center justify-center"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold text-white mb-4">Services</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Cybersecurity Consulting</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Blockchain Security</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >AI Threat Detection</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Penetration Testing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Security Training</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold text-white mb-4">Solutions</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >ChainSecure Platform</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >NeuralGuard AI</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Enterprise Shield</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Digital Identity</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Compliance Solutions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold text-white mb-4">Company</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Our Team</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pt-8 border-t border-dark-700">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-500 mb-4 md:mb-0">
+              &copy; 2023 CyberChain. All rights reserved.
+            </p>
+            <div class="flex space-x-6">
+              <a
+                href="#"
+                class="text-gray-500 hover:text-white transition-colors"
+                >Privacy Policy</a
+              >
+              <a
+                href="#"
+                class="text-gray-500 hover:text-white transition-colors"
+                >Terms of Service</a
+              >
+              <a
+                href="#"
+                class="text-gray-500 hover:text-white transition-colors"
+                >Sitemap</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="vendor/fontawsome/all.min.js"></script>
+  </body>
+</html>
