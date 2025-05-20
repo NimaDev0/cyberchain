@@ -84,3 +84,32 @@ textarea:focus {
 #menu-toggle:checked + label + .dropdown {
   display: flex;
 }
+
+/* Style Carousel */
+@layer utilities {
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .animate-slide {
+    animation: slide 20s linear infinite;
+  }
+}
+@layer utilities {
+  @keyframes slide1 {
+    0% {
+      transform: translateX(-20%);
+    }
+    100% {
+      transform: translateX(-0%);
+    }
+  }
+  .animate-slide-1 {
+    animation: slide1 15s linear infinite;
+  }
+}
+/* Style Carousel */
